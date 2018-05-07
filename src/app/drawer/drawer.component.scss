@@ -1,0 +1,10 @@
+a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 0;
+  color: blue;
+
+  &.active {
+    color: yellowgreen;
+  }
+}

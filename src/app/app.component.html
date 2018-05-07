@@ -1,0 +1,35 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <img class="logo" src="https://staticaltmetric.s3.amazonaws.com/uploads/2015/10/dark-logo-for-site.png" alt="logo">
+  <div class="search">
+    <input type="text">
+  </div>
+  <button mat-icon-button class="notifications">
+    <mat-icon>notifications_none</mat-icon>
+  </button>
+
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item>Help</button>
+  </mat-menu>
+
+  <button class="user" mat-button [matMenuTriggerFor]="appMenu">
+    <img class="avatar" src="http://brandmark.io/logo-rank/random/pepsi.png" alt="avatar">
+    <span>Name</span>
+  </button>
+
+</mat-toolbar>
+
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side">
+    <app-drawer></app-drawer>
+  </mat-drawer>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+</mat-drawer-container>
+

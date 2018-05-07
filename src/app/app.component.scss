@@ -1,0 +1,43 @@
+mat-drawer-container {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-drawer {
+  padding: 20px;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  //margin: 0 auto 0 0;
+}
+
+.search {
+  //margin: 0 auto;
+}
+
+.notifications {
+  //margin: 0 0 0 auto;
+}
+
+.user {
+  display: block;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
