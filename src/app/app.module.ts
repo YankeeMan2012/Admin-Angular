@@ -10,13 +10,19 @@ import { GamesComponent } from './games/games.component';
 import { routes } from './app.routes';
 import { CompetitionsComponent } from './competitions/competitions.component';
 import { DrawerComponent } from './drawer/drawer.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { UserComponent } from './drawer/user/user.component';
+import { NavComponent } from './drawer/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GamesComponent,
     CompetitionsComponent,
-    DrawerComponent
+    DrawerComponent,
+    ToolbarComponent,
+    UserComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

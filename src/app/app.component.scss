@@ -1,5 +1,11 @@
 mat-drawer-container {
   height: 100%;
+  background: #f3f7f9;
+}
+
+mat-drawer {
+  background: #f8fafc;
+  box-shadow: 2px 0 10px 3px #cccccc21;
 }
 
 main {
@@ -7,37 +13,4 @@ main {
   height: 100%;
   align-items: center;
   justify-content: center;
-}
-
-mat-drawer {
-  padding: 20px;
-}
-
-mat-toolbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 100px;
-  //margin: 0 auto 0 0;
-}
-
-.search {
-  //margin: 0 auto;
-}
-
-.notifications {
-  //margin: 0 0 0 auto;
-}
-
-.user {
-  display: block;
-}
-
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  overflow: hidden;
 }
