@@ -1,3 +1,69 @@
-<p>
-  games works!
-</p>
+<div class="games">
+  <div class="toolbar">
+    <mat-form-field>
+      <mat-select placeholder="Categories" [(value)]="category">
+        <mat-option *ngFor="let category of categories" [value]="category.value">
+          {{ category.label }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <ul class="tabs">
+      <li class="tab" *ngFor="let tab of tabs; let i = index">
+        <button mat-button
+                [class.active]="tab.active"
+                (click)="changeTab(tab, i)">{{tab.label}}</button>
+      </li>
+    </ul>
+
+    <div class="viewTrigger">
+      <button mat-icon-button class="tile">
+        <mat-icon>view_module</mat-icon>
+      </button>
+      <button mat-icon-button class="list">
+        <mat-icon>view_list</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class="content" [ngSwitch]="state">
+
+
+    <div class="data" *ngSwitchCase="0">
+      <div class="tabHeader">
+        <div>
+          <div class="subTitle">Don't miss them</div>
+          <div class="title">Recommended for You</div>
+        </div>
+        <button mat-raised-button class="action">View all</button>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="cardHead">
+            <div class="button users">
+              <mat-icon>perm_identity</mat-icon> 4,991,022
+            </div>
+            <div class="button rating">
+              <mat-icon *ngFor="let star of [1,1,1,1,1]">star_rate</mat-icon> 5
+            </div>
+          </div>
+
+          sdfgdfg
+        </div>
+        <div class="card">
+          sdfgdfg
+        </div>
+        <div class="card">
+          sdfgdfg
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="data" *ngSwitchCase="1">Trending Games</div>
+    <div class="data" *ngSwitchCase="2">New Releases</div>
+  </div>
+
+</div>

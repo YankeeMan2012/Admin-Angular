@@ -1,5 +1,5 @@
 mat-drawer-container {
-  height: 100%;
+  height: calc(100% - 64px);
   background: #f3f7f9;
 }
 
@@ -9,8 +9,5 @@ mat-drawer {
 }
 
 main {
-  display: flex;
   height: 100%;
-  align-items: center;
-  justify-content: center;
 }

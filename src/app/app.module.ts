@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule, MatIconModule, MatMenuModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatMenuModule, MatSelectModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 import { GamesComponent } from './games/games.component';
 import { routes } from './app.routes';
@@ -32,7 +32,8 @@ import { NavComponent } from './drawer/nav/nav.component';
     MatIconModule,
     MatButtonModule,
     RouterModule.forRoot(routes),
-    MatMenuModule
+    MatMenuModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
